@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the pae for mayank's Projects">
+    <title>Mayank's Projects</title>
+</head>
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+
+
+    }
+
+    body {
+        background-image: url("b6.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+
+    }
+
+    .nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        gap: 35px;
+        align-items: center;
+        padding: 20px;
+        border: o.5rem solid black;
+        background-color: black;
+        color: whitesmoke;
+        cursor: pointer;
+    }
+
+    .nav h2 {
+        padding: 20px;
+        display: block;
+        font-size: xx-large;
+        border: 1px solid #ded5d5;
+        background-color: black;
+        color: white;
+        margin-top: 2px;
+        border-radius: 5px;
+
+
+    }
+
+    .p1,
+    .p2,
+    .p3,
+    .p4,
+    .p5 {
+        background-image: url("i5.png");
+        border: 1px solid black;
+        grid-column: 1;
+        background-color: rgb(215, 208, 208);
+        cursor: pointer;
+        border-radius: 20px;
+
+
+
+
+    }
+
+    .p1 p {
+        text-align: justify;
+        padding: 15px;
+        margin-top: 5px;
+        color: rgb(11, 10, 10);
+        font-size:x-large;
+        padding: 10px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        word-spacing: 5px;
+        word-break: keep-all;
+
+        
+    }
+
+    .p2 {
+        grid-column: 2;
+        grid-row: 2;
+        border: 2px solid;
+        color: black;
+    }
+
+    .p2 p {
+        text-align: justify;
+        padding: 15px;
+        margin-top: 5px;
+        color: rgb(11, 10, 10);
+        font-size:x-large;
+        padding: 10px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        word-spacing: 5px;
+    }
+
+    .p3 {
+        grid-column: 1;
+        grid-row: 2;
+        border: 2px solid;
+        color: black;
+    }
+
+    .p3 p {
+        text-align: justify;
+        padding: 15px;
+        margin-top: 5px;
+        color: rgb(11, 10, 10);
+        font-size:x-large;
+        padding: 10px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        word-spacing: 5px;
+    }
+
+    .p4 {
+        grid-column: 2;
+        grid-row: 1;
+        border: 2px solid;
+        color: black;
+    }
+
+    .p4 p {
+        text-align: justify;
+        padding: 15px;
+        margin-top: 5px;
+        color: rgb(11, 10, 10);
+        font-size:x-large;
+        padding: 10px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        word-spacing: 5px;
+    }
+
+    .p5 {
+        grid-column: 2;
+        grid-row: 3;
+        border: 2px solid;
+        color: black;
+    }
+
+    .p5 p {
+        text-align: justify;
+        padding: 15px;
+        margin-top: 5px;
+        color: rgb(11, 10, 10);
+        font-size:x-large;
+        padding: 10px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        word-spacing: 5px;
+    }
+
+    main {
+        margin: 1%;
+        padding: 20px;
+        border: 2px solid rgb(20, 17, 17);
+        display: grid;
+        grid-template-columns: 700px 700px;
+        grid-template-rows: 300px 300px 300px;
+        gap: 20px;
+        border-radius: 10px;
+
+    }
+
+    .nav2 ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 35px;
+        align-items: center;
+        padding: 20px;
+        border: o.5rem solid black;
+        background-color: black;
+        color: whitesmoke;
+        cursor: pointer;
+    }
+
+    footer {
+        padding: 23px;
+        text-align: center;
+        background-color: black;
+        color: white;
+        margin-top: 76px;
+    }
+
+
+    a:hover {
+        color: aqua;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:active {
+        color: red;
+    }
+
+    @media (max-width: 500px) {
+    .nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    .nav h2 {
+        text-align: center;
+        font-size: 1.6rem;
+    }}
+     @media (max-width: 1024px) {
+        main {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            padding: 15px;
+            margin: 0.5%;
+        }
+        
+        .nav ul, .nav2 ul {
+            gap: 25px;
+            padding: 15px;
+        }
+        
+        .nav h2 {
+            font-size: x-large;
+            padding: 15px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .nav ul, .nav2 ul {
+            flex-direction: column;
+            gap: 15px;
+            text-align: center;
+            padding: 15px;
+        }
+        
+        main {
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 15px;
+            margin: 10px;
+        }
+        
+        .nav h2 {
+            font-size: large;
+            padding: 15px;
+        }
+        
+        .p1, .p2, .p3, .p4, .p5 {
+            padding: 15px;
+        }
+        
+        .p1 p, .p2 p, .p3 p, .p4 p, .p5 p {
+            padding: 10px;
+            font-size: 0.95rem;
+        }
+        
+        .p1 h3, .p2 h3, .p3 h3, .p4 h3, .p5 h3 {
+            font-size: large;
+            padding: 8px;
+        }
+        
+        footer {
+            padding: 15px;
+            margin-top: 40px;
+        }
+    }
+
+   
+    @media (max-width: 480px) {
+        .nav h2 {
+            font-size: medium;
+            padding: 12px;
+        }
+        
+        main {
+            padding: 10px;
+            margin: 5px;
+            gap: 15px;
+        }
+        
+        .p1, .p2, .p3, .p4, .p5 {
+            padding: 12px;
+            border-radius: 15px;
+        }
+        
+        .p1 p, .p2 p, .p3 p, .p4 p, .p5 p {
+            padding: 8px;
+            font-size: 0.9rem;
+        }
+        
+        .p1 h3, .p2 h3, .p3 h3, .p4 h3, .p5 h3 {
+            font-size: medium;
+        }
+        
+        .nav ul, .nav2 ul {
+            gap: 10px;
+            padding: 12px;
+        }
+    }
+
+ 
+    @media (min-width: 1400px) {
+        main {
+            grid-template-columns: repeat(2, minmax(500px, 1fr));
+            max-width: 1400px;
+            margin: 2% auto;
+        }
+    }
+</style>
+
+<body>
+    <header class="nav">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+
+
+            <li><a href="certificate.html">Licenses & certifications</a></li>
+            <li><a href="awards.html">Awards</a></li>
+            <li><a href="#">FeedBack</a></li>
+        </ul>
+        <h2>Projects</h2>
+    </header>
+    <main class="projects">
+        <div class="p1">
+            <h3 style="font-size: xx-large; padding: 10px; text-align: center; color: rgb(7, 8, 8);"><a href="https://www.linkedin.com/feed/update/urn:li:activity:7318932672737689600/"
+                    style="color: black;">BlindShoe</a></h3>
+
+            <p> The Blind Shoe, designed to assist visually impaired individuals by helping them detect
+                obstacles through ultrasonic
+                sensors and vibration feedback. This project was part of my college work, and it really
+                opened my eyes to how tech can
+                make a real difference in peopleʼs lives</p>
+        </div><br>
+        <div class="p2">
+            <h3 style="font-size: xx-large; padding: 10px; text-align: center; color: rgb(7, 8, 8);"><a href="https://www.linkedin.com/posts/mayank-guptaiwill_ai-deeplearning-machinelearning-activity-7300213953844944896-7lLB"
+                    style="color: black;">HandwrittenDigitRecognitionSystem </a>
+            </h3>
+            <p> AI Based Handwritten Digit Recognition System using CNN <br>
+                AIBased Handwritten Digit Recognition System with Convolutional Neural Network CNN. The
+                project was aimed at
+                recognizing a handwritten digit quickly and should become a learning experience-from model
+                training to real-time
+                prediction.</p>
+        </div>
+        <br>
+        <div class="p3">
+            <h3 style="font-size: xx-large; padding: 10px; text-align: center; color: rgb(7, 8, 8);"><a href="https://github.com/Mayankgupta645/node_films"
+                    style="color: black;">Films</a></h3>
+            <p> I built a backend project to manage film information using Node.js, MongoDB, and Postman. It
+                featured CRUD
+                operations, user authentication, and authorization using JWT, cookies, and bcrypt. This
+                improved
+                my skills in RESTful
+                API design and secure backend development.</p>
+        </div><br>
+        <div class="p4">
+            <h3 style="font-size: xx-large; padding: 10px; text-align: center; color: rgb(7, 8, 8);"><a href="https://www.figma.com/proto/8AfQDnJdh6tFnqZVTTs9aY/MOVE-FLIX-APP?node-id=1-11&p=f&t=ruDwR9E292fSQHPx-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A11"
+                    style="color: black;">Moviefilx</a>
+
+            </h3>
+            <p> I built a basic prototype using Figma, focusing on structure, design layout, and user
+                interface
+                experimentation.</p>
+        </div><br>
+        <div class="p5">
+            <h3 style="font-size: xx-large; padding: 10px; text-align: center; color: rgb(7, 8, 8);"><a href="#"
+                    style="color: black;"> DisasterclaimGuard</a>
+            </h3>
+            <p>I made full-stack project that involves integrating the frontend,
+                backend,
+                and a Large Language
+                Model LLM. The project focuses on seamless interaction between the user
+                interface, API services,
+                and AI-powered natural language processing capabilities.</p>
+        </div>
+    </main>
+    <footer>
+        <div class="nav2">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="certificate.html">Licenses & certifications</a></li>
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="#">FeedBack</a></li>
+                <li><a href="https://www.linkedin.com/in/mayank-gupta-4327b72b2/">LinkedIn Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/mayank-gupta-4327b72b2/">Contact Us</a> </li>
+            </ul>
+        </div>
+        <p class="last" style="padding: 5px;">&copy; 2025 Mayank Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

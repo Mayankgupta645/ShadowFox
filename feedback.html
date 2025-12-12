@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This the feedback page">
+    <title>Mayank's FeedBack Page</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background-image: url("b6.png");
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+  
+    .nav h2 {
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    
+    .nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        gap: 35px;
+        align-items: center;
+        padding: 20px;
+        border: o.5rem solid black;
+        background-color: black;
+        color: whitesmoke;
+        cursor: pointer;
+    }
+
+    .nav h2 {
+        padding: 20px;
+        display: block;
+        font-size: xx-large;
+        border: 1px solid #ded5d5;
+        background-color: black;
+        color: white;
+        margin-top: 2px;
+        border-radius: 5px;
+
+
+    }
+
+   
+    main {
+        max-width: 600px;
+        background: rgba(255, 255, 255, 0.85);
+        padding: 25px;
+        margin: 50px auto;
+        border-radius: 10px;
+        box-shadow: 0px 0px 8px rgb(0 0 0 / 20%);
+    }
+
+    .form label {
+        font-weight: bold;
+        display: block;
+        margin-top: 15px;
+    }
+
+    .form input,
+    .form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 6px;
+        border: 1px solid rgb(150, 150, 150);
+        outline: none;
+    }
+
+    .form textarea {
+        height: 120px;
+        resize: none;
+    }
+
+    .submit-btn {
+        margin-top: 20px;
+        padding: 12px;
+        width: 100%;
+        border: none;
+        background: black;
+        color: white;
+        font-size: 1.1rem;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .submit-btn:hover {
+        background: rgb(20, 20, 20);
+    }
+
+   .nav2 ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 35px;
+        align-items: center;
+        padding: 20px;
+        border: o.5rem solid black;
+        background-color: black;
+        color: whitesmoke;
+        cursor: pointer;
+    }
+
+    footer {
+        padding: 23px;
+        text-align: center;
+        background-color: black;
+        color: white;
+        margin-top: 76px;
+    }
+
+
+    a:hover {
+        color: aqua;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:active {
+        color: red;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+        .nav {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .nav ul {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        main {
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .nav h2 {
+            font-size: 1.5rem;
+        }
+    }
+</style>
+
+<body>
+
+    <header>
+        <div class="nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="certificate.html">Licenses & Certifications</a></li>
+            </ul>
+            <h2>Feedback</h2>
+        </div>
+    </header>
+
+    <main>
+        <form class="form">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="rateHome">Home Page Rating</label>
+            <input type="number" id="rateHome" placeholder="Rate out of 10">
+
+            <label for="rateProjects">Projects Page Rating</label>
+            <input type="number" id="rateProjects" placeholder="Rate out of 10">
+
+            <label for="rateAwards">Awards Page Rating</label>
+            <input type="number" id="rateAwards" placeholder="Rate out of 10">
+
+            <label for="rateCerti">Licenses & Certifications Rating</label>
+            <input type="number" id="rateCerti" placeholder="Rate out of 10">
+
+            <label for="comment">Your Feedback</label>
+            <textarea id="comment" placeholder="Please give your valuable feedback"></textarea>
+
+            <button class="submit-btn" type="submit"><a href="home.html" >Submit Feedback</a></button>
+        </form>
+    </main>
+<footer>
+        <div class="nav2">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+               <li><a href="Projects.html">Projects</a></li> <li><a href="certificate.html">Licenses & certifications</a></li>
+                
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="https://www.linkedin.com/in/mayank-gupta-4327b72b2/">LinkedIn Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/mayank-gupta-4327b72b2/">Contact Us</a> </li>
+            </ul>
+        </div>
+        <p class="last" style="padding: 5px;">&copy; 2025 Mayank Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
